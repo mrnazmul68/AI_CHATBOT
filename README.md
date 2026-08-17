@@ -23,7 +23,7 @@ This chatbot can understand user queries, work with the application's context, p
 
 ---
 
-## 🏗️ Tech Stack
+## 🏗️ Tech Stack-
 
 ### Frontend
 
