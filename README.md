@@ -123,28 +123,29 @@ A possible project structure:
 ```text
 ai-chatbot/
 │
-├── client/
+├── frontend/
 │   ├── src/
-│   │   ├── components/
+│   │   ├── components/Chat.jsx
 │   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
+│   │   ├── services/--api.js/service.js
+│   │  
 │   │   └── App.jsx
 │   │
 │   ├── package.json
 │   └── vite.config.js
 │
-├── server/
+├── backend/
 │   ├── src/
 │   │   ├── controllers/
-│   │   ├── routes/
+│   │   ├── routes/routes.js
 │   │   ├── services/
-│   │   ├── tools/
-│   │   ├── agents/
+│   │   
+│   │   ├── app.js
 │   │   └── server.js
 │   │
 │   ├── package.json
 │   └── .env
+    |__server.js  
 │
 ├── .gitignore
 └── README.md
@@ -168,7 +169,7 @@ POST /api/chat
 
 ```json
 {
-  "message": "What is today's date?"
+  "prompt": "What is today's date?"
 }
 ```
 
@@ -176,7 +177,7 @@ POST /api/chat
 
 ```json
 {
-  "message": "Today's date is August 17, 2026."
+  "AI": "Today's date is August 17, 2026."
 }
 ```
 
