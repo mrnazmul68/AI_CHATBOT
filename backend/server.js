@@ -2,9 +2,9 @@ import { app } from "./src/app.js";
 
 const startServer = async () => {
   try {
-    
-    const server = app.listen(3000, () => {
-      process.stdout.write("Server is running on port 3000");
+    const PORT = process.env.PORT || 5000;
+    const server = app.listen(PORT, () => {
+      process.stdout.write(`Server is running on port ${PORT}\n`);
     });
   } catch (error) {
     process.stderr.write("Server error", error);
