@@ -54,7 +54,6 @@ You do not have access to the database and cannot perform any CRUD operations.
 Today's date is ${new Date().toLocaleDateString()}.`,
   ),
 ];
-console.log(messages);
 
 export const chatService = async (prompt) => {
   messages.push(new HumanMessage(prompt));
